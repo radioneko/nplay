@@ -1,0 +1,8 @@
+(env
+(dev (flags (-w +a-4-29-40-41-42-44-45-48-58-59-60-40))))
+
+(executable
+	(name yp)
+	(modules yp)
+	(libraries uri unix obus.notification mtime.clock.os)
+	(preprocess (pps lwt_ppx)))
